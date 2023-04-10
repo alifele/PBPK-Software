@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>files/icons/icons/block--exclamation.png</file>
+    <file>files/icons/icons/block--minus.png</file>
+    <file>files/icons/icons/block--pencil.png</file>
+    <file>files/icons/icons/block--plus.png</file>
+    <file>files/icons/icons/block-share.png</file>
+    <file>files/icons/icons/block-small.png</file>
+    <file>files/icons/icons/blog.png</file>
+    <file>files/icons/icons/blog--arrow.png</file>
+    <file>files/icons/icons/blog-blue.png</file>
+    <file>files/icons/icons/blog--exclamation.png</file>
+    <file>files/icons/icons/blog-medium.png</file>
+  </qresource>
+</RCC>

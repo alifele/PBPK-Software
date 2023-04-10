@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1106</width>
+    <height>872</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>371</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>k_onn</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>k_on</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>k_off</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>F_total</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>F_tumor1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>F_tumor2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>F_SG</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>F_brain</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>F_GI</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>parameter</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>value</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>unit</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>371</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Compartment</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Volume</string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>Brain</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <item>
+      <property name="text">
+       <string>vascular</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>Liver</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>vascular</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>interstitial</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>bound</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>internalized</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>Salivary glands</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>vascular</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>interstitial</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>bound</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>internalized</string>
+      </property>
+     </item>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>62</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Variables</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parameters</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>620</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>640</y>
+      <width>371</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Visualization</string>
+    </property>
+   </widget>
+   <widget class="QOpenGLWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>30</y>
+      <width>681</width>
+      <height>741</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>tableWidget</zorder>
+   <zorder>treeWidget</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>openGLWidget</zorder>
+   <zorder>label_4</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1106</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionLoad"/>
+    <addaction name="actionImport"/>
+    <addaction name="actionImport_from_SBML"/>
+   </widget>
+   <widget class="QMenu" name="menuRun">
+    <property name="title">
+     <string>Run</string>
+    </property>
+    <addaction name="actionRun"/>
+    <addaction name="actionStop_current_job"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+   </widget>
+   <widget class="QMenu" name="menuparameter_sweep">
+    <property name="title">
+     <string>Experiment Design</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuparameter_sweep"/>
+   <addaction name="menuRun"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionImport"/>
+   <addaction name="actionImport_from_SBML"/>
+   <addaction name="separator"/>
+   <addaction name="actionStop_current_job"/>
+   <addaction name="actionRun"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Save as...</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="text">
+    <string>Run the simulation</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionStop_current_job">
+   <property name="text">
+    <string>Stop current job</string>
+   </property>
+  </action>
+  <action name="actionImport_from_SBML">
+   <property name="text">
+    <string>Import from SBML</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
